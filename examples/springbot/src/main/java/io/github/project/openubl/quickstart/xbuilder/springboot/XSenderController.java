@@ -20,7 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 @RestController
 public class XSenderController {
 
-    @Autowired
+    @Autowired(required = false)
     private CamelContext camelContext;
 
     CompanyURLs companyURLs = CompanyURLs.builder()
